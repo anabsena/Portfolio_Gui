@@ -1,0 +1,501 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #686A6C;
+}
+header{
+    background-image: linear-gradient( 270deg, #94b0da 0%, #94b0da 52%, #0d0d0d 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+}
+.logo{
+    background-image: url(./Imagens/Gui.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 185px;
+    height: 170px;
+    margin-top: 5px;
+}
+nav ul{
+    display: flex;
+    gap: 35px;
+    padding-right: 20px;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+}
+nav a:hover{
+    background-color: #0d0d0d;
+    color: #ffffff;
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#Inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-image: linear-gradient( 90deg, #94b0da 0%, #94b0da 52%, #0d0d0d 100%);
+    height: 100vh;
+    padding-top: 90px;
+}
+.inicioNome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nome{
+    font-family: 'Alkalami', serif;
+    font-size: 40px;
+}
+.desenvolvedor{
+    font-family: 'Roboto Mono', monospace;
+    color: #c1c1c1;
+    font-size: 30px;
+    background-color: #0d0d0d;
+    border-radius: 5px;
+    padding: 3px;
+}
+.foto img{
+    height: 50vh;
+    border-radius: 80%;
+    box-shadow: 15px 15px 18px black;
+}
+#SobreMim{
+    background-color: #0d0d0d;
+    width: 100%;
+    height: 100vh;
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#SobreMim h1{
+    font-size: 100px;
+    color: #94b0da;
+    font-family: 'Alkalami', serif;
+    text-transform: uppercase;
+}
+#SobreMim p{
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #c1c1c1;
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    text-align:start;
+    padding-top: 30px;
+}
+#SobreMim hr{
+    width: 60vw;
+}
+.text{
+    display: flex;
+    gap: 50px;
+}
+#SobreMim img{
+    width: 350px;
+    height: 260px;
+}
+#Projetos{
+    background-color: #363735;
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+}
+.TitProj{
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #52616c;
+    margin-left: 10px;
+    border-radius: 30px;
+    height: 98%;
+}
+.TitProj h1{
+    font-size: 150px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: -49px;
+    padding-top: 20px;
+}
+.lingC{
+    background-image: url(./Imagens/C.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 170px;
+    height: 170px;
+    border-radius: 30px;
+}
+.lingPython{
+    background-image: url(./Imagens/python.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 170px;
+    height: 170px;
+    border-radius: 30px;
+}
+.lingJava{
+    background-image: url(./Imagens/java.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 170px;
+    height: 170px;
+    border-radius: 30px;
+}
+.ling{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    gap: 20px;
+}
+#baixar{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    font-size: 20px;
+}
+#baixar:hover{
+    background-color:#94b0da;
+    border: none;
+    box-shadow: 15px 15px 18px black;
+}
+#Projetos iframe{
+    width: 400px;
+    height: 400px;
+}
+#baixar a{
+    text-decoration: none;
+    color: #0d0d0d;
+    text-transform: uppercase;
+}
+#contato{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+#contato button{
+    background-color: transparent;
+    border: none;
+}
+#contato button img{
+    width: 60px;
+    height: 60px;
+}
+#contato button img:hover{
+    transform: rotate3d(0, 1, 0, -180deg);
+    width: 70px;
+    height: 70px;
+}
+#contato a{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    text-decoration: none;
+    color: #0d0d0d;
+}
+#contato a:hover{
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration:overline;
+}
+@media only screen and (max-width: 769px){
+    header{
+        position: relative;
+        height: 90px;
+    }
+    .logo{
+        width: 165px;
+        height: 135px;
+        margin-top: 5px;
+    }
+    #Inicio{
+        gap: 0px;
+        padding-top: 5px;
+    }
+    #SobreMim{
+        padding-top: 0;
+    }
+    #SobreMim p{
+        font-size: 15px;
+        width: 400px;
+        height: 170px;
+        padding-top: 10px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -80px;
+        gap: 0;
+    }
+    #SobreMim img{
+        width: 250px;
+        height: 160px;
+    }
+    #Projetos{
+        padding-top: 70px;
+    }
+    .TitProj{
+        width: 150px;
+        margin-left: 10px;
+        height: auto;
+        justify-content: center;
+        margin-top: -30px;
+    }
+    .TitProj h1{
+        font-size: 110px;
+    }
+    .lingC{
+        width: 150px;
+        height: 150px;
+    }
+    .lingPython{
+        width: 150px;
+        height: 150px;
+    }
+    .lingJava{
+        width: 150px;
+        height: 150px;
+    }
+    .ling{
+        gap: 20px;
+        margin-top: -50px;
+    }
+    .linguagens{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 35px;
+    }
+    #baixar{
+        width: 150px;
+        height: 40px;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    #Projetos iframe{
+        display: none;
+    }
+    #baixar a{
+        text-decoration: none;
+        color: #0d0d0d;
+        text-transform: uppercase;
+    }
+} 
+@media only screen and (max-width: 520px){
+    header{
+        display: none;
+    }
+    #Inicio{
+        gap: 10px;
+        padding-top: 0;
+        height: 100vh;
+    }
+    .nome{
+        font-size: 40px;
+        text-align: center;
+    }
+    .desenvolvedor{
+        font-size: 25px;
+    }
+    .foto img{
+        width: 250px;
+        height: 250px;
+    }
+    #SobreMim{
+        padding-top: 0px;
+        flex-direction: column;
+        height: 55vh;
+    }
+    #SobreMim h1{
+        font-size: 50px;
+    }
+    #SobreMim p{
+        font-size: 15px;
+        width: 300px;
+        height: 200px;
+        padding-top: 8px;
+    }
+    .text{
+        flex-direction: column;
+        gap: 0px;
+        margin-top: -40px;
+    }
+    #SobreMim img{
+        width: 190px;
+        height: 140px;
+    }
+    #Projetos{
+        height: 50vh;
+        padding-top: 50px;
+        display: flex;
+    }
+    .TitProj{
+        width: 150px;
+        margin-left: 10px;
+        height: auto;
+        background-color: transparent;
+    }
+    .TitProj h1{
+        font-size: 85px;
+        margin-top: 0px;
+        padding-top: 0;
+    }
+    .lingC{
+        width: 120px;
+        height: 120px;
+    }
+    .lingPython{
+        width: 120px;
+        height: 120px;
+    }
+    .lingJava{
+        width: 120px;
+        height: 120px;
+    }
+    .ling{
+        gap: 20px;
+        font-size: 10px;
+    }
+    .linguagens{
+        margin-top: 40px;
+    }
+    #baixar{
+        width: 120px;
+        height: 30px;
+        font-size: 15px;
+    }
+    #Projetos iframe{
+        display: none;
+    }
+    #contato{
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    #contato button img{
+        width: 40px;
+        height: 40px;
+    }
+    }
+    @media only screen and (max-width: 400px){
+        header{
+            display: none;
+        }
+        #Inicio{
+            gap: 10px;
+            padding-top: 0;
+            height: 100vh;
+        }
+        .nome{
+            font-size: 40px;
+            text-align: center;
+        }
+        .desenvolvedor{
+            font-size: 25px;
+        }
+        .foto img{
+            width: 250px;
+            height: 250px;
+        }
+        #SobreMim{
+            padding-top: 0px;
+            flex-direction: column;
+            height: 65vh;
+        }
+        #SobreMim h1{
+            font-size: 50px;
+        }
+        #SobreMim p{
+            font-size: 15px;
+            width: 300px;
+            height: 200px;
+            padding-top: 8px;
+        }
+        .text{
+            flex-direction: column;
+            gap: 0px;
+            margin-top: -40px;
+        }
+        #SobreMim img{
+            width: 190px;
+            height: 140px;
+        }
+        #Projetos{
+            height: 60vh;
+            padding-top: 50px;
+            display: flex;
+        }
+        .TitProj{
+            width: 150px;
+            margin-left: 10px;
+            height: auto;
+            background-color: transparent;
+        }
+        .TitProj h1{
+            font-size: 85px;
+            margin-top: 0px;
+            padding-top: 0;
+        }
+        .lingC{
+            width: 120px;
+            height: 120px;
+        }
+        .lingPython{
+            width: 120px;
+            height: 120px;
+        }
+        .lingJava{
+            width: 120px;
+            height: 120px;
+        }
+        .ling{
+            gap: 20px;
+            font-size: 10px;
+        }
+        .linguagens{
+            margin-top: 40px;
+        }
+        #baixar{
+            width: 120px;
+            height: 30px;
+            font-size: 15px;
+        }
+        #Projetos iframe{
+            display: none;
+        }
+        #contato{
+            justify-content: center;
+            flex-direction: column;
+            margin: 0;
+        }
+        #contato button img{
+            width: 40px;
+            height: 40px;
+        }
+        }
